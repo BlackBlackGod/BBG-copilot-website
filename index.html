@@ -1,24 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<!-- The head section contains important metadata and links to resources: -->
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>J A | Portfolio</title>
+  <style>
+    :root { font-family: system-ui, Arial, sans-serif; }
+    body { margin: 0; line-height: 1.5; color: #111; }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #ddd; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 18px; }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+    nav a { text-decoration: none; border: 1px solid #ddd; padding: 6px 10px; border-radius: 10px; color: #111; }
+    nav a:hover { background: #f5f5f5; }
+    .brand { font-weight: 700; margin-right: 12px; }
+    .hero { padding: 48px 0; background: #fafafa; border-bottom: 1px solid #eee; }
+    .card { border: 1px solid #ddd; border-radius: 14px; padding: 18px; margin: 18px 0; background: #fff; }
+    h1 { margin: 0 0 8px 0; font-size: 2rem; }
+    h2 { margin: 0 0 10px 0; }
+    ul { margin: 10px 0 0 18px; }
+    footer { border-top: 1px solid #ddd; padding: 18px 0; color: #555; }
+    .sub { margin: 0; color: #555; }
+  </style>
 </head>
-
-<!-- The body section contains all visible content, structured into meaningful sections: -->
-
 <body>
-    <header>
-<!-- Navigation and header content -->
-    </header>
-    <main>
-<!-- Main content sections -->
-    </main>
-    <footer>
-<!-- Footer content -->
-    </footer>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <span class="brand">J A</span>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="wrap">
+      <h1>Welcome — I’m J A</h1>
+      <p class="sub">This is a basic HTML portfolio website created with AI assistance (GitHub Copilot) for Sprint 5.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>
+        I’m building skills in software development tools and modern workflows.
+        I’m using GitHub for version control and GitHub Pages to publish this site.
+      </p>
+      <p>
+        (Replace this text with a short bio: what you’re studying, what you want to build, and what you’re interested in.)
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML / CSS fundamentals</li>
+        <li>Git & GitHub basics (repositories, commits, Pages)</li>
+        <li>Data science foundations (Python, data cleaning, basic analysis)</li>
+        <li>Problem-solving and debugging workflows</li>
+      </ul>
+      <p style="margin-top:12px;">
+        (Edit this list to match your real skills from your course.)
+      </p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <em>your-email@example.com</em></p>
+      <p>GitHub: <em>https://github.com/BlackBlackGod</em></p>
+      <p>(You can remove the email line if you don’t want personal info public.)</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© <span id="year"></span> J A • Published with GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
+</html>
